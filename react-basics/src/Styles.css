@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+  
+header {
+    margin: 0;
+}
+  
+header h1 {
+    margin: 0;
+}
+  
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+nav ul li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #28da81a6;
+    border-radius: 5px;     
+}
+  
+nav ul li a:hover {
+    background-color: #f0f0f0; 
+}
+  
+nav ul li.active {
+    background-color: #ccc;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+  
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.item-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.item-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item-card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.item-card p {
+    margin: 10px 0 0 0;
+    font-size: 1em;
+}
+  
+.item-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.item-card button:hover {
+    background-color: #0056b3;
+}
+  
+.cart {
+    padding: 20px;
+}
+
+.cart h2 {
+    margin-top: 0;
+}
