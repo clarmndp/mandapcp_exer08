@@ -1,3 +1,3 @@
 Clarence P. Mandap
 UV-1L
-React JS Part 1: Components
+React JS Part 2: Components
