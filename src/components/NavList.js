@@ -1,5 +1,7 @@
 import React from 'react';
 
+//nav bar component
+//uses category id for determining what to display
 function NavList({ menus, setSelectedCategory }) {
   return (
     <nav>

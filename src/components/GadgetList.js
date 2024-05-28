@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ShopContext } from './ShopContext';
 
+//gadgets component to display gadget item cards w/ add to cart functionality
 function Gadgets({ items }) {
   const { addToCart, cartItems } = useContext(ShopContext);
 

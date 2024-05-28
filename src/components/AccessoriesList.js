@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ShopContext } from './ShopContext';
 
+//accessories component to display accessories item cards w/ add to cart functionality
 function Accessories({ items }) {
   const { addToCart, cartItems } = useContext(ShopContext);
   

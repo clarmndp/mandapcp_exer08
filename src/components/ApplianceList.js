@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ShopContext } from './ShopContext';
 
+//appliance component to display appliance item cards w/ add to cart functionality
 function Appliances({ items }) {
   const { addToCart, cartItems } = useContext(ShopContext);
 

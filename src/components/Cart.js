@@ -1,9 +1,12 @@
 import React, { useContext } from 'react';
 import { ShopContext } from './ShopContext';
 
+//cart component for displaying items added to cart
+//remove from cart functionality imported
 const Cart = ({ Appliancesitems, Gadgetitems, Accessoriesitems }) => {
   const { cartItems, removeFromCart } = useContext(ShopContext);
 
+  //utilize array for item objects
   const allItems = [...Appliancesitems, ...Gadgetitems, ...Accessoriesitems];
 
   return (
