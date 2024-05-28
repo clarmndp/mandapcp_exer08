@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ShopContext } from './ShopContext';
 
 const Cart = ({ Appliancesitems, Gadgetitems, Accessoriesitems }) => {
-  const { cartItems } = useContext(ShopContext);
+  const { cartItems, removeFromCart } = useContext(ShopContext);
 
   const allItems = [...Appliancesitems, ...Gadgetitems, ...Accessoriesitems];
 
@@ -13,6 +13,7 @@ const Cart = ({ Appliancesitems, Gadgetitems, Accessoriesitems }) => {
           return (
             <li key={item.id}>
               {item.name} - {item.price} (x{cartItems[item.id]})
+              <button className="remove-button" onClick={() => removeFromCart(item.id)}>Remove</button>
             </li>
           );
         }

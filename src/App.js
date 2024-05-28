@@ -68,27 +68,29 @@ function App() {
 
   return (
     <ShopContextProvider>
-    <div className="App">
-      <div className="header-container">
-      <header>
-          <h1>Lazado</h1>
-      </header>
-      <NavList menus={menus} setSelectedCategory={setSelectedCategory} />
+      <div className="App">
+        <div className="header-container">
+          <header>
+            <h1>Lazado</h1>
+          </header>
+          <NavList menus={menus} setSelectedCategory={setSelectedCategory} />
+        </div>
+        <div className="main-container">
+          <main>
+            {renderCategory()}
+          </main>
+          <div className="cart">
+            <h2>Shopping Cart</h2>
+            <Cart
+              Appliancesitems={Appliancesitems}
+              Gadgetitems={Gadgetitems}
+              Accessoriesitems={Accessoriesitems}
+            />
+          </div>
+        </div>
       </div>
-      <main>
-        {renderCategory()}
-      </main>
-      <div className="cart">
-        <h2>Shopping Cart</h2>
-        <Cart
-          Appliancesitems={Appliancesitems}
-          Gadgetitems={Gadgetitems}
-          Accessoriesitems={Accessoriesitems}
-        />
-      </div>
-    </div>
     </ShopContextProvider>
   );
 }
 
-export default App;
+export default App
